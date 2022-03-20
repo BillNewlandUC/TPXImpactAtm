@@ -51,7 +51,7 @@ public class CommandHandler : ICommandHandler
         catch (ArgumentException)
         {
             //TODO: Log malformed commands)
-            return null;
+            return ErrorStrings.CommandError;
         }
         catch (Exception)
         {

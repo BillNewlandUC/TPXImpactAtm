@@ -1,5 +1,4 @@
-﻿using System.Globalization;
-using ImpactAtm;
+﻿using ImpactAtm;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
 
@@ -19,7 +18,6 @@ var serviceProvider = new ServiceCollection()
     .AddTransient<WithdrawCommand>()
     .BuildServiceProvider();
 
-//do the actual work here
 var handler = serviceProvider.GetService<ICommandHandler>();
 if (handler != null)
 {

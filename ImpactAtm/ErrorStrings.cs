@@ -6,5 +6,6 @@
         public const string InsufficientFunds = "FUNDS_ERR";
         public const string AtmError = "ATM_ERR";
 
+        public const string CommandError = "COMMAND_ERR";
     }
 }

@@ -15,8 +15,8 @@ public class NewSessionCommand : ICommand
             throw new ArgumentException("Too few arguments");
 
         var accountNumber = args[0];
-        var expectedPin = int.Parse(args[1]);
-        var actualPin = int.Parse(args[2]);
+        var expectedPin = args[1];
+        var actualPin = args[2];
         //TODO: Should this throw an error if the previous session has not been ended?
         _session.IsValidated = false;
         _session.CurrentBalance = 0;
